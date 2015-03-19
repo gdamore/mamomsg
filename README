@@ -1,7 +1,7 @@
 Welcome to mamomsg
 ==================
 
-![](http://commons.wikimedia.org/wiki/Category:Drepanis_funerea#/media/File:Drepanis_funerea-Keulemans.jpg)
+![](mamo.jpg)
 
 The mamomsg library is a fork of [nanomsg](http://nanomsg.org).  This fork
 exists to facilitate future development of the Scalability Protocols as
