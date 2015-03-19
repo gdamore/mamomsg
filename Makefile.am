@@ -25,10 +25,10 @@ DISTCLEANFILES = @DOLT_CLEANFILES@
 EXTRA_DIST =
 
 ################################################################################
-#  nanomsg library                                                             #
+#  mamomsg library                                                             #
 ################################################################################
 
-nnincludedir = $(includedir)/nanomsg
+nnincludedir = $(includedir)/mamomsg
 nninclude_HEADERS = \
     src/nn.h \
     src/inproc.h \
@@ -43,7 +43,7 @@ nninclude_HEADERS = \
     src/bus.h \
     src/tcpmux.h
 
-lib_LTLIBRARIES = libnanomsg.la
+lib_LTLIBRARIES = libmamomsg.la
 
 NANOMSG_CORE = \
     src/core/ep.h \
@@ -326,7 +326,7 @@ NANOMSG_TRANSPORTS = \
     $(TRANSPORTS_WS) \
     $(TRANSPORTS_TCPMUX)
 
-libnanomsg_la_SOURCES = \
+libmamomsg_la_SOURCES = \
     src/transport.h \
     src/protocol.h \
     $(NANOMSG_CORE) \
@@ -337,10 +337,10 @@ libnanomsg_la_SOURCES = \
     $(NANOMSG_DEVICES)
 
 pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = libnanomsg.pc
+pkgconfig_DATA = libmamomsg.pc
 
-libnanomsg_la_LDFLAGS = -no-undefined -version-info @NN_LIBTOOL_VERSION@
-libnanomsg_la_CFLAGS = -DNN_EXPORTS
+libmamomsg_la_LDFLAGS = -no-undefined -version-info @NN_LIBTOOL_VERSION@
+libmamomsg_la_CFLAGS = -DNN_EXPORTS
 
 ################################################################################
 #  documentation                                                               #
@@ -459,7 +459,7 @@ noinst_PROGRAMS = \
     perf/local_thr \
     perf/remote_thr
 
-LDADD = libnanomsg.la
+LDADD = libmamomsg.la
 
 ################################################################################
 #  automated tests                                                             #
@@ -600,9 +600,9 @@ uninstall-hook:
           rm -f nn_bus$(EXEEXT) ; \
           rm -f nn_pair$(EXEEXT)
 	cd $(DESTDIR)$(libdir) && \
-          rm -f libnanomsg.*
+          rm -f libmamomsg.*
 	cd $(DESTDIR)$(includedir) && \
-          rm -rf nanomsg
+          rm -rf mamomsg
 
 endif #SYMLINKS
 endif #NANOCAT

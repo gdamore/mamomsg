@@ -25,8 +25,8 @@
 
 AC_PREREQ([2.53])
 
-AC_INIT([nanomsg], [m4_esyscmd([./package_version.sh])],
-   [nanomsg@freelists.org], [nanomsg], [http://nanomsg.org/])
+AC_INIT([mamomsg], [m4_esyscmd([./package_version.sh])],
+   [nanomsg@freelists.org], [mamomsg], [http://github.com/gdamore/mamomsg/])
 AC_CONFIG_SRCDIR([src/nn.h])
 AM_INIT_AUTOMAKE([1.6 foreign subdir-objects tar-ustar dist-zip])
 m4_ifdef([AM_SILENT_RULES],
@@ -50,8 +50,8 @@ AC_SUBST(NN_ABI_VERSION)
 AC_SUBST(NN_PACKAGE_VERSION)
 AC_SUBST(NN_LIBTOOL_VERSION)
 
-AC_MSG_NOTICE([nanomsg package version: $NN_PACKAGE_VERSION])
-AC_MSG_NOTICE([nanomsg ABI version: $NN_ABI_VERSION])
+AC_MSG_NOTICE([mamomsg package version: $NN_PACKAGE_VERSION])
+AC_MSG_NOTICE([mamomsg ABI version: $NN_ABI_VERSION])
 
 ################################################################################
 #  Check the compilers.                                                         #
@@ -385,6 +385,6 @@ AC_CONFIG_MACRO_DIR([m4])
 
 AC_OUTPUT([
 Makefile
-libnanomsg.pc
+libmamomsg.pc
 ])
 
