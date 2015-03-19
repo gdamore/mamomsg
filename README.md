@@ -1,1 +1,76 @@
-README
+Welcome to mamomsg <img align="right" src="mamo.jpg">
+==================
+
+[![Join the chat at https://gitter.im/gdamore/mamomsg](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gdamore/mamomsg?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+The mamomsg library is a fork of [nanomsg](http://nanomsg.org).  This fork
+exists to facilitate future development of the Scalability Protocols as
+first created by Martin Sustrik for nanomsg.  For more details about this
+project and why it exists, see below.
+
+This library is a simple high-performance implementation of several 
+"scalability protocols". The job of the scalability protocols is to define
+how multiple applications communicate to form a single distributed application.
+
+For more info check the web site: http://nanomsg.org
+There is also documentation for the SP protocols provided in this repository
+under the rfcs/ directory.
+
+Build it
+--------
+
+1.  Download the package.
+2.  Unpack it.
+3.  Go to the root directory of the package.
+4.  sh autogen.sh
+5.  ./configure
+6.  make
+7.  make check
+8.  sudo make install
+9.  On Linux or other platforms which use ld.so for dynamic linking, run 
+    ldconfig or equivalent as root to update your system’s shared library cache.
+
+Build it on Windows
+-------------------
+
+1.  Download the package.
+2.  Unpack it.
+3.  Go to the root directory of the package.
+4.  run "cmake ."
+5.  Open the nanomsg.sln file using MSVC IDE.
+6.  Build the entire solution.
+7.  Optionally, build RUN_TESTS project to run the test suite.
+
+Why a Fork?
+-----------
+
+However, that project (nanomsg) has been suffering from insufficient
+leadership, as its creator's time and interest has moved towards other things.
+Meanwhile, there is a need to continue to improve the implementation, and
+the specifications both.  The mamomsg project is a place for us to do that.
+It is hoped that at some point this project and nanomsg may remerge.
+
+Why mamomsg?
+------------
+
+The mamo is a now-extinct group of birds that were endemic to Hawai'i. It
+is the hope of this project that by taking care of the code base, we can
+ensure that it flourishes and does not also become extinct like the mamo.
+
+Resources
+---------
+
+Website: http://nanomsg.org
+
+Source code: https://github.com/nanomsg/nanomsg
+
+Documentation: http://nanomsg.org/documentation.html
+
+Bug tracker: https://github.com/nanomsg/nanomsg/issues
+
+Mailing list: nanomsg@freelists.org
+
+Subscribe to the list here: http://www.freelists.org/list/nanomsg
+
+IRC chatroom: channel #nanomsg at irc.freenode.net/8001
+
