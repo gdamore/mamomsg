@@ -1,7 +1,5 @@
-Welcome to mamomsg
+Welcome to mamomsg ![](mamo.jpg)
 ==================
-
-![](mamo.jpg)
 
 The mamomsg library is a fork of [nanomsg](http://nanomsg.org).  This fork
 exists to facilitate future development of the Scalability Protocols as
