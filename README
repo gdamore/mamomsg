@@ -1,7 +1,7 @@
-Welcome to mamomsg ![](mamo.jpg)
+Welcome to mamomsg
 ==================
 
-The mamomsg library is a fork of [nanomsg](http://nanomsg.org).  This fork
+![](mamo.jpg) The mamomsg library is a fork of [nanomsg](http://nanomsg.org).  This fork
 exists to facilitate future development of the Scalability Protocols as
 first created by Martin Sustrik for nanomsg.  For more details about this
 project and why it exists, see below.
