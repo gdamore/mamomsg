@@ -1,6 +1,8 @@
 Welcome to mamomsg <img align="right" src="mamo.jpg">
 ==================
 
+[![Join the chat at https://gitter.im/gdamore/mamomsg](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gdamore/mamomsg?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 The mamomsg library is a fork of [nanomsg](http://nanomsg.org).  This fork
 exists to facilitate future development of the Scalability Protocols as
 first created by Martin Sustrik for nanomsg.  For more details about this
